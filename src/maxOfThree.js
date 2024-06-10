@@ -1,15 +1,17 @@
 function maxOfThree(x, y, z) {
-  if (x > y && x > z) {
+  if (x >= y && x >= z) {
     return x
   }
 
-  if (y > z && y > x) {
+  if (y >= z && y >= x) {
     return y
   }
 
-  if (z > x && z > y) {
+  if (z >= x && z >= y) {
     return z
   }
+
+  return x
 }
 
 export default maxOfThree
